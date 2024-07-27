@@ -1,0 +1,4 @@
+id,title,job,location,department,company,industry,salary
+1,Data Scientist,Data Scientist,New York,Data,Google,Technology,100000'
+2,Data Analyst,Data Analyst,New York,Data,Facebook,Technology,80000
+3,Data Engineer,Data Engineer,New York,Data,Amazon,Technology,90000
