@@ -10,3 +10,16 @@ Design Doc - https://drive.google.com/file/d/1sVdNnIX-tBEcdAAItEpG1aDUzladQq-0/v
 
 #### Backend Notes
 - Probably using Node.js just because
+
+
+#### Frontend Notes
+[x] - setup frontend react app
+[x] - basic landing page with search base
+[ ] - navigation
+[ ] - page to view job results (dummy data)
+[ ] - authentication
+[ ] - upload resume
+[ ] - profile page
+[ ] - profile settings/questionare
+[ ] - connect job results page to ddb
+[ ] - connect profile settings to ddb
