@@ -15,7 +15,8 @@ Design Doc - https://drive.google.com/file/d/1sVdNnIX-tBEcdAAItEpG1aDUzladQq-0/v
 #### Frontend Notes
 [x] - setup frontend react app
 [x] - basic landing page with search base
-[ ] - navigation
+[x] - simple navigation bar
+[ ] - routing between pages
 [ ] - page to view job results (dummy data)
 [ ] - authentication
 [ ] - upload resume
