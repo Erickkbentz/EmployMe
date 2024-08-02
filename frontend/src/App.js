@@ -1,24 +1,19 @@
 import "./App.css";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
+import Home from "./pages/Home/Home";
+import JobList from "./pages/JobList/JobList";
 
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen">
-      <header className="flex flex-row justify-between p-5">
-        <h1 className="text-3xl text-left font-bold text-white">
-          Employ Me
-        </h1>
-        <h1 className="text-xl text-right font-bold text-white">
-          Login
-        </h1>
-     </header>
-      <main className="flex justify-center items-center flex-grow">
-        <div className="w-2/4">
-          <SearchBar/>
-        </div>
-      </main>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/jobs" element={<JobList />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
