@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from "../../components/SearchBar/SearchBar";
 import NavBar from '../../components/NavBar/NavBar';
+import UploadResume from "../../components/UploadResume/UploadResume";
 
 
 function JobList() {
@@ -18,8 +19,9 @@ function JobList() {
           <NavBar />  
       </header>
       <main className="flex flex-col justify-center items-center flex-grow">
-        <div className="w-2/5 pb-10">
-          <SearchBar />
+        <div className="w-2/4 pb-10 flex justify-center items-center">
+          <SearchBar/>
+          <UploadResume/>
         </div>
         <div className='justify-center items-center flex-grow w-3/4'>
           <ul>

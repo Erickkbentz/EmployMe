@@ -1,5 +1,7 @@
+import React from 'react';
 import NavBar from "../../components/NavBar/NavBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import UploadResume from "../../components/UploadResume/UploadResume";
 
 
 function Home() {
@@ -9,8 +11,9 @@ function Home() {
                 <NavBar/>
             </header>
             <main className="flex justify-center items-center flex-grow">
-                <div className="w-2/4 -mt-60">
+                <div className="flex justify-center items-center w-2/4 -mt-60">
                     <SearchBar/>
+                    <UploadResume/>
                 </div>
             </main>
         </div>

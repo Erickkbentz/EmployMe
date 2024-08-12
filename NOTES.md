@@ -24,8 +24,10 @@ Design Doc - https://drive.google.com/file/d/1sVdNnIX-tBEcdAAItEpG1aDUzladQq-0/v
 [x] - page to view job results (dummy data)
 [x] - route to job list page on search button submit
 [x] - authentication (simple auth with google)
-[ ] - upload resume
+[x] - upload resume button (pdf)
+[ ] - store uploaded resume file in server
 [ ] - profile page
+[ ] - location bar
 [ ] - profile settings/questionare
 [ ] - connect job results page to ddb
 [ ] - connect search button to ddb

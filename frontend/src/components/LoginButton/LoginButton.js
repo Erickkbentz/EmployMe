@@ -1,16 +1,18 @@
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { UserContext } from '../../context/UserContext';
 
 
 function LoginButton() {
-    const [ user, setUser ] = useState([]);
+    const { user, setUser } = useContext(UserContext);
     const [ profile, setProfile ] = useState([]);
     const [ profileMenuVisible, setProfileMenuVisible] = useState(false);
     const menuRef = useRef(null);
 
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => setUser(codeResponse),
-        onError: (error) => console.log('Login Failed:', error)
+        onError: (error) => console.log('Login Failed:', error),
+        ux_mode: 'popup'
     });
   
     useEffect(
