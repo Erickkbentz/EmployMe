@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import  LoginButton  from "../LoginButton/LoginButton";
+
 
 function NavBar() {
   return (
@@ -6,9 +8,9 @@ function NavBar() {
         <h1 className="text-3xl text-left font-bold text-white">
             <Link to="/">Employ Me</Link>
         </h1>
-        <h1 className="text-xl text-right font-bold text-white">
-            Login
-        </h1>
+        <div>
+          <LoginButton />
+        </div>
     </nav>
   );
 }

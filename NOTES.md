@@ -23,7 +23,7 @@ Design Doc - https://drive.google.com/file/d/1sVdNnIX-tBEcdAAItEpG1aDUzladQq-0/v
 [x] - routing between pages
 [x] - page to view job results (dummy data)
 [x] - route to job list page on search button submit
-[ ] - authentication
+[x] - authentication (simple auth with google)
 [ ] - upload resume
 [ ] - profile page
 [ ] - profile settings/questionare
