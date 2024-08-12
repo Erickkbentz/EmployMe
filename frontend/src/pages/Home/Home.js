@@ -9,7 +9,7 @@ function Home() {
                 <NavBar/>
             </header>
             <main className="flex justify-center items-center flex-grow">
-                <div className="w-2/4">
+                <div className="w-2/4 -mt-60">
                     <SearchBar/>
                 </div>
             </main>

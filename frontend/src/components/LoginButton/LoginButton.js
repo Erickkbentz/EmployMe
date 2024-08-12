@@ -70,46 +70,24 @@ function LoginButton() {
 
 
     return (
-        <div>
+        <div className="h-12 items-center flex justify-center items-center">
             {profile ? (
                 <div>
                     <img 
                         src={profile.picture} 
                         alt="user profile" 
-                        style={{ 
-                            width: '50px', 
-                            height: '50px', 
-                            borderRadius: '50%' ,
-                            border: '1px solid lightgray'
-                        }} 
+                        className="w-12 h-12 rounded-full border border-gray-300 cursor-pointer object-cover"
                         onClick={toggleMenu}
                     />
                      {profileMenuVisible && (
                         <div
                             ref={menuRef}
-                            style={{ 
-                                position: 'fixed', 
-                                top: '0', 
-                                right: '0', 
-                                width: '200px', 
-                                height: '100%', 
-                                background: 'white', 
-                                borderLeft: '1px solid lightgray', 
-                                display: 'flex', 
-                                flexDirection: 'column', 
-                                alignItems: 'center', 
-                                paddingTop: '20px' 
-                            }}
+                             className="fixed top-0 right-0 w-48 h-full bg-white border-l border-gray-300 flex flex-col items-center pt-5"
                         >
                             <img 
                                 src={profile.picture} 
                                 alt="user profile" 
-                                style={{ 
-                                    width: '50px', 
-                                    height: '50px', 
-                                    borderRadius: '50%' ,
-                                    border: '1px solid lightgray'
-                                }} 
+                                className="w-12 h-12 rounded-full border border-gray-300 cursor-pointer"
                                 onClick={toggleMenu}
                             />
                             <button className='text-black' onClick={logOut}>Log out</button>
