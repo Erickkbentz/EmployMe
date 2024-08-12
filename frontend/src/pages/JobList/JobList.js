@@ -25,8 +25,8 @@ function JobList() {
           <ul>
               {jobs.map(job => (
                 <li key={job.id} className="border-b border-gray-300 py-4">
-                  <h2>{job.title}</h2>
-                  <p>{job.company} - {job.location}</p>
+                  <h2 className='text-white'>{job.title}</h2>
+                  <p className='text-white'>{job.company} - {job.location}</p>
                 </li>
               ))}
             </ul>
