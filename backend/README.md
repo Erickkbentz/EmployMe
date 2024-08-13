@@ -11,5 +11,5 @@ npm run start-server
 ```bash
 # Make requests
 
-curl -i http://localhost:3000/jobs  
+curl -i http://localhost:3001/jobs
 ```

@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; // You can change the port number as needed
+const port = 3001; // You can change the port number as needed
 
 // Define a simple route
 app.get('/', (req, res) => {
