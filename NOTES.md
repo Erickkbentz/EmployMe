@@ -25,6 +25,7 @@ Probably using Node.js just because
 
 
 ## Frontend
+We added authentication, but we want to have all of this running locally rather than on a remote server so the authentication is not needed any more
 
 
 #### Tasks
