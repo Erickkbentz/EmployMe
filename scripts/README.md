@@ -2,7 +2,7 @@
 ## Installing and Running `tor`
 
 ### On Mac
-1. Install homebrew
+1. Install [homebrew](https://brew.sh/)
     ```sh
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
