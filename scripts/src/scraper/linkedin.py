@@ -1,14 +1,12 @@
 from job import Job
-import requests
-import time
 from bs4 import BeautifulSoup
 
 class LinkedIn(Job):
-    def __init__(self, job_title, location, experience):
+    def __init__(self, job_title, location, experience, session):
         super().__init__(job_title, location)
         self.experience = experience
         self._ids = []
-    
+        self.session = session
 
     def fetch_ids(self):
 
@@ -19,7 +17,7 @@ class LinkedIn(Job):
         url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={self._job_title}&location={self._location}&start={page_start}&f_E={self.experience}"
 
         #establish the connection and get html
-        response = requests.get(url)
+        response = self.session.get(url)
         page_data = response.text
 
         #use beautifulsoup to parse html and get job ids
